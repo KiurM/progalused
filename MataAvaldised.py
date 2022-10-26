@@ -1,4 +1,4 @@
-"""mata avaldised----"""
+"""mata avaldised, 14 ülesannet"""
 import math
 from typing import re
 
@@ -11,38 +11,54 @@ sum = num_a + num_b
 print(f"{num_a} + {num_b} = {sum}")
 print(riba)
 
+# 1
+
 difference = num_a - num_b
 #print(difference)
 print(f"{num_a} - {num_b} = {difference}")
 print(riba)
+
+#
 
 division = num_a / num_b
 #print(division)
 print(f"{num_a} / {num_b} = {division}")
 print(riba)
 
+# 1
+
 division2 = (num_a // num_b)
 #print(division2)
 print(f"{num_a} // {num_b} = {division2}")
 print(riba)
+
+# 2
 
 multiply_numbers = num_a * num_b
 #print(multiply_numbers)
 print(f"{num_a} * {num_b} = {multiply_numbers}")
 print(riba)
 
+# 3
+
 power = num_a ** num_b
 print(f"{num_a} ** {num_b} = {power}")
 print(riba)
+
+# 4
 
 remainder = num_a % num_b
 #print(remainder)
 print(f"{num_a} % {num_b} = {remainder}")
 print(riba)
 
+# 5
+
 avarage = (num_a + num_b) / 2
 print(f"({num_a} + {num_b}) / 2 = {avarage}")
 print(riba)
+
+# 6
 
 radius = 5
 circle_area = (radius ** 2) * math.pi
@@ -51,7 +67,7 @@ circle_area = (radius ** 2) * math.pi
 print(f"({radius} ** 2) * {math.pi} = {round(circle_area, 2)}")
 print(riba)
 
-#lenght
+# 7
 
 side_lenght = 3
 kõrgus1 = (side_lenght ** 2 + (side_lenght / 2) ** 2)
@@ -79,6 +95,9 @@ print(riba)
 
 ##Loo muutuja c, mille väärtuseks on kahe kaateti pikkuste a ja b abil arvutatud hüpotenuusi pikkus.
 #Hüpotenuusi pikkus võib olla ujukoma arv, kaatetite pikkused on alati positiivsed täisarvud.
+
+# 9
+
 #Meeldetuletus: Pythagorase teoreemist a² + b² = c².
 
 kaatet_a = 4
@@ -88,11 +107,15 @@ hupotenuus_c = math.sqrt(kaatet_a ** 2 + kaatet_b ** 2)
 print(f"math.sqrt({kaatet_a} ** 2 + {kaatet_b} ** 2) = {hupotenuus_c}")
 print(riba)
 
+# 10
+
 hupotenuus_c2 = 14.4
 kaatet_a2 = 6
 kaatet_b2 = math.sqrt(hupotenuus_c2 ** 2 - kaatet_a2 ** 2)
 print(f"math.sqrt({hupotenuus_c2} ** 2 - {kaatet_a2} ** 2) = {kaatet_b2}")
 print(riba)
+
+# 11
 
 seconds = 163
 minutes = seconds // 60, seconds % 60
@@ -116,6 +139,7 @@ print(lots_of_heys)
 print(riba)
 
 # 14. Adding numbers
+
 num_a = 123
 num_b = 431
 string_numbers = str(num_a) + str(num_b)
