@@ -145,4 +145,3 @@ num_b = 431
 string_numbers = str(num_a) + str(num_b)
 print(string_numbers)
 print(riba)
-
