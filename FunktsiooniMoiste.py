@@ -32,3 +32,18 @@ def calculate_hypotenuse_length():
     print(hupotenuus)
 
 calculate_hypotenuse_length()
+
+print(" ")
+
+def calculate_cathetus_length():
+    uuskaatet1 = input("Sisesta 1. kaateti pikkus: ")
+    uushupotenuus = input("Sisesta kolmnurga hüpotenuusi pikkus: ")
+    uuskaatet1 = int(uuskaatet1)
+    uushupotenuus = int(uushupotenuus)
+
+    uuskaatet2 = math.sqrt((uushupotenuus ** 2) - (uuskaatet1 ** 2))
+    uuskaatet2 = float(uuskaatet2)
+
+    print("Teise kaateti pikkus on: " + str(uuskaatet2))
+
+calculate_cathetus_length()
