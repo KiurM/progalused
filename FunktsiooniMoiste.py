@@ -35,6 +35,8 @@ calculate_hypotenuse_length()
 
 print(" ")
 
+# Teise kaateti leidmine ühe kaateti ja hüpotenuusi abil
+
 def calculate_cathetus_length():
     uuskaatet1 = input("Sisesta 1. kaateti pikkus: ")
     uushupotenuus = input("Sisesta kolmnurga hüpotenuusi pikkus: ")
