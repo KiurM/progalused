@@ -23,32 +23,22 @@ print(" ")
 
 # ülesanne 2
 
-def calculate_hypotenuse_length():
-    kaatet1 = input("Sisesta 1. kaateti pikkus: ")
-    kaatet2 = input("Sisesta 2. kaateti pikkus: ")
-    kaatet1 = int(kaatet1)
-    kaatet2 = int(kaatet2)
+def calculate_hypotenuse_length(a, b):
+    c = math.sqrt(a**2 + b**2)
+    return c
 
-    hupotenuus = math.sqrt((kaatet1 ** 2) + (kaatet2 ** 2))
+func_result = calculate_hypotenuse_length(5, 4)
+print(func_result)
 
-    hupotenuus = float(hupotenuus)
-    print(hupotenuus)
-
-calculate_hypotenuse_length()
 
 print(" ")
 
 # Teise kaateti leidmine ühe kaateti ja hüpotenuusi abil
 
-def calculate_cathetus_length():
-    uuskaatet1 = input("Sisesta 1. kaateti pikkus: ")
-    uushupotenuus = input("Sisesta kolmnurga hüpotenuusi pikkus: ")
-    uuskaatet1 = int(uuskaatet1)
-    uushupotenuus = int(uushupotenuus)
+def calculate_cathetus_length(a: int, b: int):
+    c = math.sqrt(a**2 - b**2)
+    return c
 
-    uuskaatet2 = math.sqrt((uushupotenuus ** 2) - (uuskaatet1 ** 2))
-    uuskaatet2 = float(uuskaatet2)
+    print(float(c))
 
-    print("Teise kaateti pikkus on: " + str(uuskaatet2))
-
-calculate_cathetus_length()
+print(calculate_cathetus_length(6.4, 4))
