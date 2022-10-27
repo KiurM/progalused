@@ -12,7 +12,10 @@ def get_hello():
 def ask_name_and_greet_user():
     nimi = input("Sisesta nimi: ")
     cap_name = nimi.capitalize()
-    print("Hi, " + cap_name + ". Would you like a hamburger.")
+    if cap_name == "Thanos":
+        print("Get out of here Thanos!!!")
+    else:
+        print("Hi, " + cap_name + ". Would you like a hamburger.")
 
 ask_name_and_greet_user()
 
