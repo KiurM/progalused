@@ -24,13 +24,13 @@ sum_six(int(6))
 # Ülesanne 4
 
 def  sum_numbers(a, b):
-    print(int(a) + int(b))
+    return (int(a) + int(b))
 
-sum_numbers(15, 5)
+print(sum_numbers(15, 5))
 
 # Ülesanne 5
 
 def usd_to_eur(usd):
-    print(int(usd) - (int(usd) / 100 * 20))
+    return(int(usd) - (int(usd) / 100 * 20))
 
-usd_to_eur(8)
+print(usd_to_eur(10))
