@@ -1,147 +1,95 @@
-"""mata avaldised, 14 ülesannet"""
+"""Math exercises."""
+
 import math
-from typing import re
 
-num_a = 4
-num_b = 6
-riba = "-----------------------------------------------------------------------"
+def sum_and_difference(num_a: int, num_b: int) -> tuple:
+    """Return the sum and difference of given variables num_a and num_b."""
+    # Write your code here
+    sum = num_a + num_b
+    difference = num_a - num_b
+    return sum, difference
 
-sum = num_a + num_b
-#print(sum)
-print(f"{num_a} + {num_b} = {sum}")
-print(riba)
+print(sum_and_difference(4, 3))
 
-# 1
 
-difference = num_a - num_b
-#print(difference)
-print(f"{num_a} - {num_b} = {difference}")
-print(riba)
+def float_division(num_a: int, num_b: int) -> float:
+    """Divide given variables num_a and num_b and return the result."""
+    # Write your code here
+    division = num_a / num_b
+    return division
 
-#
+print(float_division(10, 5))
 
-division = num_a / num_b
-#print(division)
-print(f"{num_a} / {num_b} = {division}")
-print(riba)
 
-# 1
+def integer_division(num_a: int, num_b: int) -> int:
+    """Divide given variables num_a and num_b and return the result rounded down."""
+    # Write your code here
+    division = (num_a / num_b)
+    division = round(division)
+    return division
 
-division2 = (num_a // num_b)
-#print(division2)
-print(f"{num_a} // {num_b} = {division2}")
-print(riba)
+print(integer_division(7, 5))
 
-# 2
 
-multiply_numbers = num_a * num_b
-#print(multiply_numbers)
-print(f"{num_a} * {num_b} = {multiply_numbers}")
-print(riba)
+def powerful_operations(num_a: int, num_b: int) -> tuple:
+    """Return the product of given variables, num_a to the power of num_b and the remainder of division of variables."""
+    # Write your code here
+    multiply_numbers = num_a * num_b
+    power = num_a ** num_b
+    remainder = num_a % num_b
+    return multiply_numbers, power, remainder
 
-# 3
+print(integer_division(9, 5))
 
-power = num_a ** num_b
-print(f"{num_a} ** {num_b} = {power}")
-print(riba)
 
-# 4
+def find_average(num_a: int, num_b: int) -> float:
+    """Return the average of given variables."""
+    # Write your code here
+    average = ((num_a + num_b) / 2)
+    return average
 
-remainder = num_a % num_b
-#print(remainder)
-print(f"{num_a} % {num_b} = {remainder}")
-print(riba)
+print(find_average(4, 6))
 
-# 5
 
-avarage = (num_a + num_b) / 2
-print(f"({num_a} + {num_b}) / 2 = {avarage}")
-print(riba)
+def area_of_a_circle(radius: float) -> float:
+    """Calculate and return the area of a circle."""
+    # Write your code here
+    circle_area = math.pi * (radius ** 2)
+    circle_area = round(circle_area, 2)
+    return circle_area
 
-# 6
+print(area_of_a_circle(2))
 
-radius = 5
-circle_area = (radius ** 2) * math.pi
-#print(circle_area)
-#answer = str(round(answer, 2))
-print(f"({radius} ** 2) * {math.pi} = {round(circle_area, 2)}")
-print(riba)
 
-# 7
+def area_of_an_equilateral_triangle(side_length: float) -> int:
+    """Calculate and return the area of an equilateral triangle."""
+    # Write your code here
+    triangle_area = math.sqrt(3) / 4 * side_length ** 2
+    triangle_area = round(triangle_area)
+    return triangle_area
 
-side_lenght = 3
-kõrgus1 = (side_lenght ** 2 + (side_lenght / 2) ** 2)
-#print(kõrgus1)
-kõrgus2 = math.sqrt(kõrgus1)
-#print(kõrgus2)
-triangle_area = round((kõrgus2 * side_lenght) / 2)
-#print(triangle_area)
-print(f"({math.sqrt(side_lenght ** 2 + (side_lenght / 2) ** 2)} * {side_lenght}) / 2 = {triangle_area}")
-print(riba)
+print(area_of_an_equilateral_triangle(4))
 
-# triangle_area = (math.sqrt(3) / 4) * side_lenght ** 2
-# triangle_area = round(triangle_area)
-# print(f"Triangle area is {triangle_area} if side lenght is {side_lenght}")
 
-# 8
+def calculate_discriminant(a: int, b: int, c: int) -> int:
+    """Calculate discriminant with given variables and return the result."""
+    # Write your code here
+    discriminant = b ** 2 - 4 * a * c
+    return discriminant
 
-#discriminant = b² - 4ac
-dis_a = 2
-dis_b = 3
-dis_c = 4
-discriminant = (dis_b ** 2) - 4 * dis_a * dis_c
-print(f"({dis_b} ** 2) - 4 * {dis_a} * {dis_c} = {discriminant}")
-print(riba)
+print(calculate_discriminant(4, 3, -7))
 
-##Loo muutuja c, mille väärtuseks on kahe kaateti pikkuste a ja b abil arvutatud hüpotenuusi pikkus.
-#Hüpotenuusi pikkus võib olla ujukoma arv, kaatetite pikkused on alati positiivsed täisarvud.
 
-# 9
+def calculate_hypotenuse_length(a: int, b: int) -> float:
+    """Return the length of hypotenuse when the lengths of the catheti are given."""
+    # Write your code here
+    c = float(math.sqrt(a ** 2 + b ** 2))
+    return c
 
-#Meeldetuletus: Pythagorase teoreemist a² + b² = c².
+print(calculate_hypotenuse_length(4, 6))
 
-kaatet_a = 4
-kaatet_b = 7
-hupotenuus_c = math.sqrt(kaatet_a ** 2 + kaatet_b ** 2)
-#print (float(hupotenuus_c))
-print(f"math.sqrt({kaatet_a} ** 2 + {kaatet_b} ** 2) = {hupotenuus_c}")
-print(riba)
 
-# 10
-
-hupotenuus_c2 = 14.4
-kaatet_a2 = 6
-kaatet_b2 = math.sqrt(hupotenuus_c2 ** 2 - kaatet_a2 ** 2)
-print(f"math.sqrt({hupotenuus_c2} ** 2 - {kaatet_a2} ** 2) = {kaatet_b2}")
-print(riba)
-
-# 11
-
-seconds = 163
-minutes = seconds // 60, seconds % 60
-print(minutes)
-print(riba)
-
-# 12. Student helper
-
-angle = 35
-sine = (math.sin(math.pi / angle))
-cosine = (math.cos(math.pi * angle))
-print(round(sine, 1))
-print(round(cosine, 1))
-print(riba)
-
-# 13. Greetings
-
-n = 5
-lots_of_heys = n * "Hey"
-print(lots_of_heys)
-print(riba)
-
-# 14. Adding numbers
-
-num_a = 123
-num_b = 431
-string_numbers = str(num_a) + str(num_b)
-print(string_numbers)
-print(riba)
+def calculate_cathetus_length(a: int, c: int) -> float:
+    """Return the length of cathetus when the lengths of the second cathetus and hypotenuse are given."""
+    # Write your code here
+    return b
